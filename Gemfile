@@ -9,6 +9,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
 
+gem 'twitter-bootstrap-rails'
+
 gem 'puma', '~> 4.1'
 # gem 'sass-rails', '>= 6'
 # gem 'webpacker', '~> 4.0'
