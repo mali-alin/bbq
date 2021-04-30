@@ -7,6 +7,8 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.6'
 
 gem 'uglifier', '>= 1.3.0'
 
+gem 'devise'
+
 gem 'jquery-rails'
 
 gem 'twitter-bootstrap-rails'
