@@ -29,3 +29,6 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
+  
+  confirm:
+    phrase: 'Вы уверены?'
