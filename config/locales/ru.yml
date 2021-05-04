@@ -1,34 +1,85 @@
 ru:
   activerecord:
     models:
-      user: 'Пользователь'
-      event: 'Событие'
+      user: "Пользователь"
+      event: "Событие"
     attributes:
       user:
-        email: 'Email'
-        username: 'Имя'
-        password: 'Пароль'
-        password_confirmation: 'Подтверждение пароля'
+        email: "Email"
+        username: "Имя"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
       event:
-        title: 'Название'
-        address: 'Место проведения'
-        datetime: 'Дата и время'
-        description: 'Описание'
+        title: "Название"
+        address: "Место проведения"
+        datetime: "Дата и время"
+        description: "Описание"
   controllers:
     events:
-      created: 'Вы создали новое мероприятие'
-      updated: 'Мероприятие успешно обновлено'
-      destroyed: 'Мероприятие удалено'
+      created: "Вы создали новое мероприятие"
+      updated: "Мероприятие успешно обновлено"
+      destroyed: "Мероприятие удалено"
     users:
-      updated: 'Вы обновили свой профиль'
+      updated: "Вы обновили свой профиль"
   app:
-    name: 'Шашлыки'
-    company: 'Хороший программист'
+    name: "Шашлыки"
+    company: "Хороший программист"
 
   mistakes:
-    one: '%{count} ошибка'
-    few: '%{count} ошибки'
-    many: '%{count} ошибок'
+    one: "%{count} ошибка"
+    few: "%{count} ошибки"
+    many: "%{count} ошибок"
+  
+  symbols:
+    one: "(минимум %{count} символ)"
+    few: "(минимум %{count} символа)"
+    many: "(минимум %{count} символов)"
   
   confirm:
-    phrase: 'Вы уверены?'
+    phrase: "Вы уверены?"
+  
+  views:
+    events:
+      form:
+        save: "Сохранить"
+        back: "вернуться"
+      index:
+        events: "События"
+        create: "Создать событие"
+      new: 
+        create: "Создание нового события"
+      show:
+        change: "Изменить"
+        delete: "Удалить событие"
+    layouts:
+      application:
+        profile: "Профиль"
+        logout: "Выйти"
+        login: "Войти"
+        signup: "Зарегистрироваться"
+    partials:
+      form_errors:
+        phrase: "В вашей форме"
+    users: 
+      form:
+        save: "Сохранить"
+        back: "вернуться"
+      edit:
+        change: "Сменить пароль"
+      show:
+        edit: "Редактировать профиль"
+        organizer: "Организовал"
+        event_absence: "Пользователь пока не организовал ни одного события"
+    devise:
+      registrations:
+        edit: 
+          profile_edit: "Редактирование профиля"
+          blank: "(пропустите этот шаг, если вам не нужно менять пароль)"
+          current_password: "(введите текущий пароль, чтобы внести изменения)"
+          update: "Обновить"
+          cancel: "Удалить аккаунт"
+          unhappy: "Не нравится сайт?"
+          back: "Назад"
+        new:
+          registration: "Регистрация"
+          registrate: "Зарегистрироваться"
