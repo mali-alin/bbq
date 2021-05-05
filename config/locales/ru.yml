@@ -21,6 +21,10 @@ ru:
       destroyed: "Мероприятие удалено"
     users:
       updated: "Вы обновили свой профиль"
+    comments:
+      created: "Ваш комментарий дообавлен"
+      destroyed: "Комментарий удален"
+      error: "Ошибка с комментарием"
   app:
     name: "Шашлыки"
     company: "Хороший программист"
@@ -51,6 +55,8 @@ ru:
       show:
         change: "Изменить"
         delete: "Удалить событие"
+      edit:
+        event_edit: "Редактирование события"
     layouts:
       application:
         profile: "Профиль"
@@ -83,3 +89,6 @@ ru:
         new:
           registration: "Регистрация"
           registrate: "Зарегистрироваться"
+    comments:
+      comment:
+        destroy_confirm: "Вы уверены, что хотите удалить этот комментарий?"
