@@ -12,7 +12,7 @@ class User < ApplicationRecord
 
   before_validation :set_name, on: :create
 
-  after_commit :lnk_subscriptions, on: :create
+  after_commit :link_subscriptions, on: :create
   
   private
 
@@ -21,6 +21,6 @@ class User < ApplicationRecord
   end
 
   def link_subscriptions
-    Subscription.where(user_id: nil, user_email: user.email).update_all(user_id: user.id)
+    Subscription.where(user_id: nil, user_email: self.email).update_all(user_id: self.id)
   end
 end
