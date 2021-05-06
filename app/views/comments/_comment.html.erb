@@ -3,7 +3,7 @@
   <p>
     <span>
       <% if comment.user.present? %>
-        <%= render partial: 'users/user', object: comment.user %>
+        <%= render partial: "users/user", object: comment.user %>
       <% else %>
         <em><strong><%= comment.username %></strong></em>
       <% end %>
@@ -11,10 +11,9 @@
     <em><%= l comment.created_at, format: :short %></em>
     <% if current_user_can_edit?(comment) %>
         <%= link_to(
-                fa_icon('trash'), event_comment_path(comment.event, comment),
-                method: :delete, data: {confirm: t('.destroy_confirm')}
+                fa_icon("trash"), event_comment_path(comment.event, comment),
+                method: :delete, data: {confirm: t("views.comments.comment.destroy_confirm")}
             ) %>
     <% end %>
   </p>
 </div>
-
