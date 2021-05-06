@@ -55,6 +55,7 @@
         <h4>Зовет:</h4>
         <p><%= render partial: "users/user", object: @event.user %></p>
       </div>
+      <% if @event.subscriptions.count > 0 %>
       <div class="event-subscriptions">
         <h4>Пойдут:</h4>
         <div>
@@ -64,6 +65,8 @@
           </p>
         </div>
       </div>
+      <% end %>
+      
       <% unless @event.user == current_user %>
       <div class="event-subscription-form">
         <h4>Я пойду:</h4>
