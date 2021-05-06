@@ -74,7 +74,7 @@ ru:
         change: "Сменить пароль"
       show:
         edit: "Редактировать профиль"
-        organizer: "Организовал"
+        organizer: "Организовал:"
         event_absence: "Пользователь пока не организовал ни одного события"
     devise:
       registrations:
