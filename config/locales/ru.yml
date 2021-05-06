@@ -60,6 +60,9 @@ ru:
       show:
         change: "Изменить"
         delete: "Удалить событие"
+        invitatory: "Зовет:"
+        people: "Идут:"
+        me: "Я пойду:"
       edit:
         event_edit: "Редактирование события"
     layouts:
