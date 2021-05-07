@@ -17,6 +17,9 @@ gem 'russian'
 
 gem 'jquery-rails'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 gem 'twitter-bootstrap-rails'
 
 gem 'puma', '~> 4.1'
