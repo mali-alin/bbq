@@ -41,9 +41,9 @@
     <div class="col-md-8">
       <div class="event-photos">
         <%# Выводим все фотографии события %>
-        <div class="event-photos-gallery">
+        <!-- <div class="event-photos-gallery">
           <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
-        </div>
+        </div> -->
         <div class="event-photos-gallery">
           <%= render partial: 'photos/form', locals: {photo: @new_photo || @event.photos.build} %>
         </div>
