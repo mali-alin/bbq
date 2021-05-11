@@ -20,6 +20,8 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'rmagick'
 
+gem "fog-aws"
+
 gem 'twitter-bootstrap-rails'
 
 gem 'puma', '~> 4.1'
