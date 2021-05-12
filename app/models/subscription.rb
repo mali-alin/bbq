@@ -39,15 +39,14 @@ class Subscription < ApplicationRecord
   end
 
   def check_event_owner
-     if event.user == user
-      errors[:base] << I18n.t("controllers.subscriptions.subscribe_error")
-
-     end
+    if event.user == user
+      errors.add(:base, :check_event_owner)
+    end
   end
 
   def check_email_registered
     if User.find_by(email: user_email).present?
-      errors[:base] << I18n.t("controllers.subscriptions.existing_email")
+      errors.add(:base, :check_email_registered)
     end
   end
 end

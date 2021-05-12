@@ -25,6 +25,13 @@ ru:
         user_email: "Ваш email"
       photo:
         photo: "Фотография"
+    errors: 
+      models: 
+        subscription:
+          attributes:
+            base:
+              check_email_registered: "Данный email зарегистрирован"
+              check_event_owner: "Вы не можете подписаться на собственное событие"
   controllers:
     events:
       created: "Вы создали новое мероприятие"
