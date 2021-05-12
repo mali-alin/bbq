@@ -5,3 +5,8 @@
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%= link_to t("views.layouts.application.signup"), new_registration_path(resource_name) %><br />
 <% end %>
+
+<%- if controller_name == 'sessions' || controller_name == 'registrations'%>
+  <%= link_to "Забыли пароль?", new_user_password_path %>
+<% end %>
+
