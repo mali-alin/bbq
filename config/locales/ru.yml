@@ -17,6 +17,7 @@ ru:
         address: "Место проведения"
         datetime: "Дата и время"
         description: "Описание"
+        pincode: "Пинкод доступа"
       comment:
         username: "Ваше имя"
         body: "Комментарий"
@@ -37,6 +38,7 @@ ru:
       created: "Вы создали новое мероприятие"
       updated: "Мероприятие успешно обновлено"
       destroyed: "Мероприятие удалено"
+      wrong_pincode: "Неверный пароль"
     users:
       updated: "Вы обновили свой профиль"
     comments:
@@ -88,6 +90,10 @@ ru:
         me: "Я пойду:"
       edit:
         event_edit: "Редактирование события"
+      password:
+        access: "Доступ только по пинкоду"
+        pincode: "Пинкод"
+        link: "На главную"
     layouts:
       application:
         profile: "Профиль"
