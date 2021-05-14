@@ -121,6 +121,8 @@ GEM
       actionpack (>= 5.0)
       less (~> 2.6.0)
       sprockets (~> 3.0)
+    lightbox2-rails (2.8.2.1)
+      railties (>= 3.1)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -233,6 +235,7 @@ DEPENDENCIES
   devise-i18n
   fog-aws
   jquery-rails
+  lightbox2-rails
   listen (~> 3.2)
   pg
   puma (~> 4.1)

@@ -21,6 +21,8 @@ gem 'carrierwave'
 gem 'rmagick'
 
 gem "fog-aws"
+gem 'lightbox2-rails'
+
 
 gem 'twitter-bootstrap-rails'
 

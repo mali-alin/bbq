@@ -57,6 +57,11 @@
           <%= render partial: "comments/comment",
             collection: @event.comments.except(@new_comment) %>
         </div>
+
+        <div id="map"
+          data-address="<%= @event.address %>"
+          style="width: 100%; height: 400px;">
+        </div>
       </div>
     </div>
 
