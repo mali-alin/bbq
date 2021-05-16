@@ -9,6 +9,7 @@ function init(){
       zoom: 10
   });
 
+  
   myGeocoder = ymaps.geocode(address);
 
   myGeocoder.then(
