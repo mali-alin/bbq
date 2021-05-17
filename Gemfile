@@ -23,6 +23,9 @@ gem 'rmagick'
 gem "fog-aws"
 gem 'lightbox2-rails'
 
+gem 'mailjet'
+gem 'dotenv-rails'
+
 
 gem 'twitter-bootstrap-rails'
 
