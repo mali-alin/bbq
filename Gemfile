@@ -26,7 +26,6 @@ gem 'lightbox2-rails'
 gem 'mailjet'
 gem 'dotenv-rails'
 
-
 gem 'twitter-bootstrap-rails'
 
 gem 'puma', '~> 4.1'
@@ -45,6 +44,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "letter_opener"
 end
 
 group :development do
