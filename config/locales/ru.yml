@@ -146,3 +146,11 @@ ru:
         event: "Событие"
         datetime: "Состоится"
         owner: "Организатор"
+      pic:
+        title: "Новое фото"
+        name: "Имя:"
+        email: "Email:"
+        event: "Событие:"
+        datetime: "Состоится:"
+        owner: "Организатор:"
+        photo: "Фото:"
