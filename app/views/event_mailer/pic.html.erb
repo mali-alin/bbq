@@ -1,0 +1,12 @@
+<h1><%= t 'views.event_mailer.pic.title' %></h1>
+<hr/>
+
+<%= t 'views.event_mailer.pic.name' %> <strong><%= @photo.user.username %></strong>
+<p><%= t 'views.event_mailer.pic.email' %> <strong><%= @photo.user.email %></strong></p>
+<hr/>
+
+<%= t 'views.event_mailer.pic.event' %> <strong><%= @event.title %></strong>
+<p><%= t 'views.event_mailer.pic.datetime' %> <strong><%= l @event.datetime %></strong></p>
+<p><%= t 'views.event_mailer.pic.owner' %> <strong><%= @event.user.username %></strong></p>
+<p><%= t 'views.event_mailer.pic.photo' %></p>
+<%= image_tag(@photo.photo.url)%>
