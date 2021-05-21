@@ -4,20 +4,20 @@ class EventMailer < ApplicationMailer
     @name = subscription.username
     @event = event
 
-    mail to: event.user.email, subject: "Новая подписка на #{event.title}"
+    mail to: event.user.email, subject: "#{I18n.t("mailers.event_mailer.new_subscription")} #{event.title}"
   end
 
   def comment(event, comment, email)
     @comment = comment
     @event = event 
 
-    mail to: email, subject: "Новый комментарий @ #{event.title}"
+    mail to: email, subject: "#{I18n.t("mailers.event_mailer.new_subscription")} #{event.title}"
   end
 
   def pic(event, photo, email)
     @photo = photo
     @event = event
 
-    mail to: email, subject: "Добавлена фотография к событию #{@event.title}"
+    mail to: email, subject: "#{I18n.t("mailers.event_mailer.new_subscription")} #{@event.title}"
   end
 end

@@ -5,8 +5,8 @@
 <p><%= t 'views.event_mailer.pic.email' %> <strong><%= @photo.user.email %></strong></p>
 <hr/>
 
-<%= t 'views.event_mailer.pic.event' %> <strong><%= @event.title %></strong>
+<%= t 'views.event_mailer.pic.event' %> <strong><%= link_to @event.title, @event %></strong>
 <p><%= t 'views.event_mailer.pic.datetime' %> <strong><%= l @event.datetime %></strong></p>
 <p><%= t 'views.event_mailer.pic.owner' %> <strong><%= @event.user.username %></strong></p>
 <p><%= t 'views.event_mailer.pic.photo' %></p>
-<%= image_tag(@photo.photo.url)%>
+<%= image_tag(@photo.photo.thumb.url)%>

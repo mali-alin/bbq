@@ -1,14 +1,12 @@
 <h1><%= t 'views.event_mailer.comment.title' %></h1>
-<p><%= @comment.body %></p>
-<p><%= t 'views.event_mailer.comment.author' %>: <strong><%= @comment.username %></strong></p>
+<hr/>
+<%= t 'views.event_mailer.comment.text' %> <strong><%= @comment.body %></strong>
+<p><%= t 'views.event_mailer.comment.author' %> <strong><%= @comment.username %></strong></p>
 
 <hr/>
 
-<%= t 'views.event_mailer.comment.event' %>
-<h3><%= @event.title %></h3>
+<%= t 'views.event_mailer.comment.event' %> <strong><%= link_to @event.title, @event%></strong>
 
-<%= t 'views.event_mailer.comment.datetime' %>
-<h4><%= l @event.datetime %></h4>
+<p><%= t 'views.event_mailer.comment.datetime' %> <strong><%= l @event.datetime %></strong></p>
 
-<%= t 'views.event_mailer.comment.owner' %>
-<h4><%= @event.user.username %></h4>
+<p><%= t 'views.event_mailer.comment.owner' %> <strong><%= @event.user.username %></strong></p>

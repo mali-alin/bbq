@@ -28,6 +28,8 @@ gem 'dotenv-rails'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'pry', '~> 0.13.1'
+
 gem 'puma', '~> 4.1'
 # gem 'sass-rails', '>= 6'
 # gem 'webpacker', '~> 4.0'

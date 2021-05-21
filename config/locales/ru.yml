@@ -37,6 +37,11 @@ ru:
           attributes:
             base:
               photo_presence: "Вы не выбрали фото"
+  mailers:
+    event_mailer:
+      new_subscription: "Новая подписка на"
+      new_comment: "Новый комментарий @"
+      new_photo: "Добавлена фотография к событию"
   controllers:
     events:
       created: "Вы создали новое мероприятие"
@@ -46,7 +51,7 @@ ru:
     users:
       updated: "Вы обновили свой профиль"
     comments:
-      created: "Ваш комментарий дообавлен"
+      created: "Ваш комментарий добавлен"
       destroyed: "Комментарий удален"
       error: "Ошибка с комментарием"
     subscriptions:
@@ -139,22 +144,24 @@ ru:
     event_mailer:
       subscription:
         title: "Новая подписка"
-        name: "Имя"
-        email: "Email"
-        event: "Событие "
+        name: "Имя:"
+        email: "Email:"
+        event: "Событие:"
         author: "Автор"
-        owner: "Организатор"
+        datetime: "Дата события:"
+        owner: "Организатор:"
       comment:
         title: "Новый комментарий"
-        author: "Автор"
-        event: "Событие"
-        datetime: "Состоится"
-        owner: "Организатор"
+        text: "Текст:"
+        author: "Автор:"
+        event: "Событие:"
+        datetime: "Дата события:"
+        owner: "Организатор:"
       pic:
         title: "Новое фото"
         name: "Имя:"
         email: "Email:"
         event: "Событие:"
-        datetime: "Состоится:"
+        datetime: "Дата события:"
         owner: "Организатор:"
         photo: "Фото:"
