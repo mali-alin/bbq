@@ -33,5 +33,5 @@ module Bbq
     config.generators.system_tests = nil
     config.action_mailer.delivery_method = :mailjet
     config.action_mailer.asset_host = 'http://localhost:3000'
-  send
+  end
 end
