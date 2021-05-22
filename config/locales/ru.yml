@@ -135,6 +135,19 @@ ru:
         new:
           registration: "Регистрация"
           registrate: "Зарегистрироваться"
+      passwords:
+        new:
+          forgot: "Забыли пароль?"
+          send_instructions: "Выслать новый пароль"
+        edit:
+          password_changing: "Смена пароля"
+          new_password: "Новый пароль"
+          confirmation: "Подтверждение пароля"
+          change_password: "Сменить пароль"
+          symbols:
+            one: "(минимум %{count} символ)"
+            few: "(минимум %{count} символа)"
+            many: "(минимум %{count} символов)"
     comments:
       comment:
         destroy_confirm: "Вы уверены, что хотите удалить этот комментарий?"
