@@ -37,11 +37,13 @@ ru:
           attributes:
             base:
               photo_presence: "Вы не выбрали фото"
-  mailers:
-    event_mailer:
-      new_subscription: "Новая подписка на"
-      new_comment: "Новый комментарий @"
-      new_photo: "Добавлена фотография к событию"
+  event_mailer:
+    subscription:
+      subject: "Новая подписка на '%{event}'"
+    comment:
+      subject: "Новый комментарий к событию '%{event}'"
+    pic:
+      subject: "Добавлена фотография к событию '%{event}'"
   controllers:
     events:
       created: "Вы создали новое мероприятие"
