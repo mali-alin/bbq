@@ -38,6 +38,5 @@
 */.DS_Store
 /public/uploads
 .env
-
 config/secrets.yml
 config/database.yml
