@@ -26,8 +26,8 @@ ru:
         user_email: "Ваш email"
       photo:
         photo: "Фотография"
-    errors: 
-      models: 
+    errors:
+      models:
         subscription:
           attributes:
             base:
@@ -62,10 +62,13 @@ ru:
       error: "Не удалось подписаться/отписаться"
       subscribe_error: "Вы не можете подписаться на собственное событие"
       existing_email: "Данный email зарегистрирован"
+      subscribe: "Подписаться"
     photos:
       error: "Что-то не так с фотографиией"
       created: "Добавлена фотография к событию"
-      destroy: "Фотография удалена"
+      destroyed: "Фотография удалена"
+      added: "Добавил"
+      download: "Загрузить"
   app:
     name: "Шашлыки"
     company: "Хороший программист"
@@ -74,15 +77,15 @@ ru:
     one: "%{count} ошибка"
     few: "%{count} ошибки"
     many: "%{count} ошибок"
-  
+
   symbols:
     one: "(минимум %{count} символ)"
     few: "(минимум %{count} символа)"
     many: "(минимум %{count} символов)"
-  
+
   confirm:
     phrase: "Вы уверены?"
-  
+
   views:
     events:
       form:
@@ -91,7 +94,7 @@ ru:
       index:
         events: "События"
         create: "Создать событие"
-      new: 
+      new:
         create: "Создание нового события"
       show:
         change: "Изменить"
@@ -114,7 +117,7 @@ ru:
     partials:
       form_errors:
         phrase: "В вашей форме"
-    users: 
+    users:
       form:
         save: "Сохранить"
         back: "вернуться"
@@ -126,7 +129,7 @@ ru:
         event_absence: "Пользователь пока не организовал ни одного события"
     devise:
       registrations:
-        edit: 
+        edit:
           profile_edit: "Редактирование профиля"
           blank: "(пропустите этот шаг, если вам не нужно менять пароль)"
           current_password: "(введите текущий пароль, чтобы внести изменения)"
