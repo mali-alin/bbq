@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
-    
+
   has_many :events, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
@@ -13,9 +13,9 @@ class User < ApplicationRecord
   before_validation :set_name, on: :create
 
   after_commit :link_subscriptions, on: :create
-  
+
   mount_uploader :avatar, AvatarUploader
-  
+
   private
 
   def set_name
