@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   before_action :set_event, only: [:show]
-  before_action :set_current_user_event, only: [:edit, :update, :destroy] 
+  before_action :set_current_user_event, only: [:edit, :update, :destroy]
 
   before_action :password_guard!, only: [:show]
 
@@ -57,11 +57,11 @@ class EventsController < ApplicationController
 
   def password_guard!
     if @event.pincode.blank?
-      return true 
+      return true
     end
 
     if signed_in? && current_user == @event.user
-      return true 
+      return true
     end
 
     if params[:pincode].present? && @event.pincode_valid?(params[:pincode])
@@ -69,7 +69,7 @@ class EventsController < ApplicationController
     end
 
     pincode = cookies.permanent["events_#{@event.id}_pincode"]
-    
+
     unless @event.pincode_valid?(pincode)
       if params[:pincode].present?
         flash.now[:alert] = I18n.t('controllers.events.wrong_pincode')

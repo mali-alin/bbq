@@ -15,6 +15,10 @@ gem 'rails-i18n'
 
 gem 'russian'
 
+gem 'pundit'
+
+gem 'resque', '~> 1.27'
+
 gem 'jquery-rails'
 
 gem 'carrierwave'
@@ -50,6 +54,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "letter_opener"
+  gem 'rspec-rails', '~> 3.4'
   # gem 'listen', '~> 3.2'
 end
 
@@ -59,4 +64,3 @@ group :development do
 #   gem 'spring'
 #   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-

@@ -9,6 +9,10 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  # config.active_job.queue_adapter = :resque
+  # Префикс для имени очередей
+  # config.active_job.queue_name_prefix = "bbqtogether_#{Rails.env}"
+
   # Show full error reports.
   config.consider_all_requests_local = true
 

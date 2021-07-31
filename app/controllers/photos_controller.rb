@@ -14,7 +14,7 @@ class PhotosController < ApplicationController
 
     # Проставляем у фотографии пользователя
     @new_photo.user = current_user
- 
+
     if @new_photo.save
       notify_subscribers(@event, @new_photo)
       # Если фотографию удалось сохранить, редирект на событие с сообщением

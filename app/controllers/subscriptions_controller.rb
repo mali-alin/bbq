@@ -6,7 +6,7 @@ class SubscriptionsController < ApplicationController
   def create
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
-      
+
     if @new_subscription.save
       EventMailer.subscription(@event, @new_subscription).deliver_now
       # Если сохранилась успешно, редирект на страницу самого события
@@ -15,7 +15,7 @@ class SubscriptionsController < ApplicationController
       # если ошибки — рендерим здесь же шаблон события
       render "events/show", alert: I18n.t("controllers.subscriptions.error")
     end
-  end 
+  end
 
   def destroy
     message = {notice: I18n.t("controllers.subscriptions.destroyed")}
