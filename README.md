@@ -1,24 +1,10 @@
-# README
+# BBQ
+Данное приложение предоставляет возможность создавать события, подписываться на них, оставлять комментарии и фотографии.
+------
+### Регистрация и вход:
+Приложение поддерживает пока только стандартную регистрацию.
+### Создание события:
+![Запись экрана 2021-09-01 в 13 51 03](https://user-images.githubusercontent.com/79279989/131667838-5fbfd122-d9ef-42fb-986e-1628843fec11.gif)
+Пользователь может создать, редактировать и удалить событие. Также пользователь может поставить пин-код на событие (опционально). При подписке пользователь получает уведомление на почту. Все пользователи, подписанные на событие, получает уведомление на почту, если под событием кто-то оставляет комментарий.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -19,6 +19,9 @@ gem 'pundit'
 
 gem 'resque', '~> 1.27'
 
+gem "omniauth"
+gem "omniauth-facebook"
+
 gem 'jquery-rails'
 
 gem 'carrierwave'
