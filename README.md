@@ -41,12 +41,13 @@ database.yml
     database: `name`
 ```
 5) В корневой папке bbq создать файл .env
-
+```
 MAILJET_API_KEY = ''
 
 MAILJET_SECRET_KEY = ''
 
 MAILJET_SENDER = ''
+```
 
 6) Запустить команду: `rails s`
 
